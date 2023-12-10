@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- 忽略某些安卓平台对某些邮箱的识别 -->
+<meta name="format-detection" content="email=no" />
+<!-- 当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对iOS的safari -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式，可选default、black、black-translucent -->
+<meta name="author" content="xujiang" />
+<meta name="description" content="h5拼图游戏"/>
+<meta name="keywords" content="gulp"/>
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- <link rel="stylesheet" type="text/css" href="./css/base.ff13207e52.css"></link> -->
+    <title>开心拼拼乐</title>
+    <link rel="stylesheet" href="./css/index.40f4fc33cd.css">
+ <embed src="./zz.mp3" hidden="true" autostart="true" loop="true">
+</head>
+<body>
+    <div class="wrap">
+            <div class="start-page">
+                    <div class="title">请选择一个图片开始你的拼图旅途！</div>
+                    <div class="album-list">
+                        <div class="img-wrap">
+                            <img src="img2/01.jpg" alt="">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="img2/06.jpg" alt="">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="img2/03.jpg" alt="">
+                        </div>
+                        <div class="img-wrap">
+                                <img src="img2/04.jpg" alt="">
+                        </div>
+                        <div class="img-wrap">
+                                <img src="img2/05.jpg" alt="">
+                        </div>
+                        <div class="img-wrap">
+                            <div class="file-wrap">
+                                <input type="file" id="file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn" id="start">开始游戏</div>
+                </div>
+                <div class="play-page">
+                    <div class="deloy">倒计时：<span id="time">180</span></div>
+                    <div class="play-area" id="playArea">
+                        <div class="piece piece-0"></div>
+                        <div class="piece piece-1"></div>
+                        <div class="piece piece-2"></div>
+                        <div class="piece piece-3"></div>
+                        <div class="piece piece-4"></div>
+                        <div class="piece piece-5"></div>
+                        <div class="piece piece-6"></div>
+                        <div class="piece piece-7"></div>
+                        <div class="piece piece-8"></div>
+                    </div>
+                    <div class="btn" id="change">重新排序</div>
+                    <div class="btn" id="back">返回</div>
+                </div>
+                <div class="result-page">
+                    <div class="success-text">恭喜你拼出该图片！</div>
+                    <div class="total-time">用时<span id="use_time"></span>s</div>
+                    <!--<div class="btn" id="generate">生成海报</div>-->
+                  <!--  <div class="btn" id="again">再来一次</div> -->
+				  <!-- input οnclick="javascrtpt:window.location.href='https://ye-dongguo-yuanchao.gitee.io/hjmhjm'" id="again"  class="btn" name="Submit" type="button" value="再来一次"/ -->
+				 <!-- <button οnclick="javascrtpt:window.location.href='https://ye-dongguo-yuanchao.gitee.io/hjmhjm'" class="btn" id= "again" type="button"> 再来一次</button> -->
+                <button class="btn" id="again" onclick="redirectToCodePage()">再来一次！</button>
+
+				</div>
+                <div class="preview-page"></div>
+				
+    </div>
+	 
+
+    <script src="./js/lib/xuery.ff5d129cb6.js"></script>
+    <script src="./js/index.611a8fc23b.js"></script>
+	<script>
+	        function redirectToCodePage() {
+	            window.location.href = "http://127.0.0.1:8848/%E5%BC%80%E5%BF%83%E6%8B%BC%E6%8B%BC%E4%B9%90/index.html"; 
+	        }
+	    </script>
+    	<div>
+			<li class="first">
+				<h1>计科2102-48-刘瑞东</h1>
+			</li>
+		</div>
+</body>
+</html>

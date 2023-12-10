@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style>
+        body {
+            background-color: #F5F5DC;
+        }
+        .box  {
+            margin: auto;
+            width: 1000px;
+            height: 600px;
+            position: relative;
+        }
+        .box img {
+            border: 1px solid white;
+            padding: 10px;
+            width: 300px;
+            box-shadow: 1px 1px 5px #666;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+        .box img:hover {
+            transform: scale(1.5,1.5);
+            z-index: 1;
+        }
+        .img1 {
+            position: absolute;
+            top: 181px;
+            left: 300px;
+            transform: rotate(45deg);
+        }
+        .img2 {
+            position: absolute;
+            top: 248px;
+            left: 142px;
+            transform: rotate(-25deg);
+        }
+        .img3 {
+            position: absolute;
+            top: 97px;
+            left: 472px;
+            transform: rotate(15deg);
+        }
+        .img4 {
+            position: absolute;
+            top: 280px;
+            left: 531px;
+            transform: rotate(-65deg);
+        }
+        .img5 {
+            position: absolute;
+            top: 133px;
+            left: 93px;
+            transform: rotate(40deg);
+        }
+        .img6 {
+            position: absolute;
+            top: 393px;
+            left: 318px;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="img2/06.jpg" class="img1">
+    <img src="img2/02.jpg" class="img2">
+    <img src="img2/03.jpg" class="img3">
+    <img src="img2/04.jpg" class="img4">
+    <img src="img2/05.jpg" class="img5">
+    <img src="img2/01.jpg" class="img6">
+</div>
+</body>
+</html>

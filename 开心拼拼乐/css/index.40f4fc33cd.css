@@ -1,0 +1,34 @@
+.play-page,.result-page,.start-page,.start-page .title{text-align:center}
+body,html{margin:0;padding:0;width:100%;overflow-x:hidden}
+.wrap{display:flex;width:400vw;transition:transform 1s cubic-bezier(.52,.37,.16,1.32)} 
+div{box-sizing:border-box}
+.btn{margin-top:20px;display:inline-block;padding:10px 60px;width:300px;background-color:#06c;color:#fff;cursor:pointer}
+#start {
+	margin-bottom: 1.875rem;
+}
+.play-page,.preview-page,.result-page,.start-page{width:100vw;height:100vh}
+.start-page .title{line-height:4em;font-size:24px}
+.start-page .album-list{width:100%;display:flex;flex-wrap:wrap}
+.start-page .album-list .img-wrap{margin-bottom:30px;width:33.33%;height:500px;overflow:hidden}
+.start-page .album-list .img-wrap.active{border:4px solid #06c}.start-page .album-list .img-wrap img{width:425px}
+.start-page .album-list .img-wrap .file-wrap{position:relative;height:100%;background-position:center center;background-size:100%;background-repeat:no-repeat}
+.start-page .album-list .img-wrap .file-wrap::before{content:'+';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:#ccc;cursor:pointer}
+.start-page .album-list .img-wrap .file-wrap input{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0}.play-page{background-color:#4e2503}
+.play-page .deloy{padding:10px 20px;color:#fff}
+.play-page .play-area
+{position:relative;
+width:84vw;
+height:60vh;
+display:flex;
+flex-wrap:wrap;
+margin:20px auto;outline:#ccc solid 4px}
+.play-page .play-area.active{outline-color:#1f8b40}
+.play-page .play-area .piece{position:absolute;left:0;top:0;width:28vw;height:20vh;border:1px solid transparent;background-image:url(../images/caixushen.jpg);background-repeat:no-repeat;background-size:84vw 60vh;transition:transform .6s ease-in-out}
+.play-page .play-area .piece.active{border:3px solid red}.play-page .play-area .piece-0{background-position:0 0}
+.play-page .play-area .piece-1{background-position:-28vw 0}.play-page .play-area .piece-2{background-position:-56vw 0}
+.play-page .play-area .piece-3{background-position:0 -20vh}.play-page .play-area .piece-4{background-position:-28vw -20vh}
+.play-page .play-area .piece-5{background-position:-56vw -20vh}.play-page .play-area .piece-6{background-position:0 -40vh}
+.play-page .play-area .piece-7{background-position:-28vw -40vh}.play-page .play-area .piece-8{background-position:-56vw -40vh}
+.result-page{padding-left:20px;padding-right:20px;background-color:#2b2929}
+.result-page .success-text{padding-top:160px;padding-bottom:20px;font-size:36px;color:#e4d721;font-weight:700}
+.result-page .total-time{display:block;margin-bottom:30px;color:#fff;font-size:24px}
